@@ -1,0 +1,50 @@
+﻿@model MediClinic.Models.PatientRecord
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PatientRecord</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientFullname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientFullname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientIDNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientIDNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientPrescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientPrescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientAge)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PatientRecordID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
